@@ -1,16 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Portfolio de Juanma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hola, soy Juanma</h1>
-  <p>Bienvenido a mi portfolio en GitHub Pages.</p>
+  <header class="hero">
+    <div class="container">
+      <h1>Juanma Cad</h1>
+      <p class="subtitle">Docente · Creador de contenido · Tecnología educativa</p>
+      <a href="#proyectos" class="btn">Ver proyectos</a>
+    </div>
+  </header>
 
-  <h2>Proyectos</h2>
-  <ul>
-    <li><a href="https://github.com/juanmacad">Mi perfil en GitHub</a></li>
-  </ul>
+  <nav class="navbar">
+    <div class="container">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy Juanma, educador y apasionado por la tecnología aplicada al aula.
+        Me gusta diseñar experiencias de aprendizaje creativas y utilizar
+        herramientas digitales para mejorar la motivación y el rendimiento
+        del alumnado.
+      </p>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos destacados</h2>
+
+      <article class="card">
+        <h3>Proyecto 1 – Nombre del proyecto</h3>
+        <p>
+          Breve descripción del proyecto: objetivo, a quién va dirigido y qué
+          problema resuelve.
+        </p>
+        <p class="meta">
+          Tecnologías: HTML, CSS, GitHub Pages
+        </p>
+        <a href="https://github.com/juanmacad" target="_blank" class="link">
+          Ver en GitHub
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>Proyecto 2 – Nombre del proyecto</h3>
+        <p>
+          Añade aquí otro proyecto interesante: puede ser una unidad didáctica,
+          una web, un recurso TIC, etc.
+        </p>
+        <p class="meta">
+          Tecnologías: Canva, Genially, etc.
+        </p>
+        <a href="#" class="link">
+          Ver más detalles
+        </a>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Habilidades</h2>
+      <ul class="skills">
+        <li>Diseño de actividades y recursos digitales</li>
+        <li>Uso de plataformas educativas online</li>
+        <li>Trabajo cooperativo y aprendizaje basado en proyectos</li>
+        <li>Herramientas de IA aplicadas a la educación</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        ¿Te interesa colaborar o saber más sobre mi trabajo?
+        Puedes escribirme a:
+      </p>
+      <p class="contacto">
+        📧 <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a>
+      </p>
+      <p class="contacto">
+        🧑‍💻 <a href="https://github.com/juanmacad" target="_blank">Mi GitHub</a>
+      </p>
+      <!-- Añade aquí tu LinkedIn o web si tienes -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Juanma Cad · Portfolio</p>
+  </footer>
+
+  <script>
+    // año automático en el pie
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
